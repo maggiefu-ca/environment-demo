@@ -1,0 +1,192 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+  margin:0 5%;
+}
+
+/* Grid CSS */
+#heroGrid {
+  display:grid;
+  height:50vh;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows:4fr 1fr;
+}
+
+#featuredProduct {
+  background: url(../images/furniture1.jpg) center/cover no-repeat;
+  position:relative;
+  grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:1;
+  grid-row-end:3;
+  /* grid-column:1 / 2;  */
+  /* grid-row:1 / 3;  */
+  /* grid-area: 1 / 3 / 3 / 3;  */
+  /* grid row start / column start / row end / column end; */
+}
+#headline {
+  position:absolute;
+  right:-30px;
+  top:15%;
+  background:rgba(255,255,255,.8);
+  padding:30px 30px 20px;
+  border-bottom:5px solid #FF6200
+}
+#headline h3 {
+  text-align:left;
+}
+#headline h3:hover {
+  color:#FF6200;
+  cursor:pointer;
+  transition:all .3s ease-in-out;
+}
+#CTA {
+  grid-column-start:2;
+  grid-column-end:3;
+  grid-row-start:2;
+  grid-row-end:3;
+  background-image: url(../images/woodbg.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  transition:all .3s ease-in-out;
+}
+#CTA:hover {
+  opacity:.9;
+  cursor:pointer;
+}
+#secondaryProduct {
+  background-image: url(../images/furniture2.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  grid-column-start:2;
+  grid-column-end:3;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+/* Category Grid CSS */
+#categoryGrid {
+  height:80vh;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "bookcases bedroom patio"
+  "couches couches patio"
+  "desks desks desks"
+  ;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+#bookcases {
+  background: url(../images/bookcases.png) center/cover no-repeat;
+  grid-area:bookcases;
+}
+#bedroom {
+  background: url(../images/beds.png) center/cover no-repeat;
+  grid-area:bedroom;
+}
+#patio {
+  background: url(../images/patio.png) center/cover no-repeat;
+  grid-area:patio;
+}
+#couches {
+  background: url(../images/couch.png) center/cover no-repeat;
+  grid-area:couches;
+}
+#desks {
+  background: url(../images/desks.png) top/cover no-repeat;
+  grid-area:desks;
+}
+.categoryGridArea {
+  display:grid;
+  align-items:end;
+}
+.categoryGridArea:hover {
+  opacity:.9;
+  cursor:pointer;
+  transition:all .3s ease-in-out;
+}
+.categoryGridArea .heading {
+  background:rgba(0,0,0,.6);
+  color:#fff;
+  box-sizing: border-box;
+  width:100%;
+  padding:20px;
+  border-bottom:5px solid #FF6200
+}
+
+/* Navigation CSS */
+/* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+#navBar h1 {
+  width: 25%;
+  font-weight: 500;
+}
+#navigation {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#navigation a {
+  text-decoration: none;
+  color:#333;
+  transition:all .3s ease-in-out;
+}
+#navigation a.highlight {
+  color: #FF6200;
+  font-weight: 700;
+}
+#navigation a:hover {
+  color: #FF6200;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+.icons img {
+  margin: 15px;
+  cursor: pointer;
+}
+
+/* Typography CSS */
+
+h2 {
+  font-size: 60px;
+  margin: 0px 0px;
+  color: #FF6200;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0px 0px;
+  text-align:center;
+  text-decoration: underline;
+  padding:20px 0;
+}
+
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #636364;
+}
